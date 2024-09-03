@@ -1,0 +1,659 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Serif Text', serif;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; 
+}
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    
+  }
+.header_section{
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    background-color: black;
+    color: white;
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+ .container{
+    display: flex; 
+    flex-direction: row; 
+    gap: 2rem;
+    margin-top: 10px;
+    align-items: centre;
+    justify-content: centre;
+    /* color:black; */
+    background-color: black;
+    height: 80px;
+   
+ }
+ #page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* max-width: 1200px; */
+  width: 100%;
+}
+
+#text {
+  flex: 1;
+  padding: 40px !important;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #page {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile-img {
+      width: 60vw !important;
+      height: auto !important;
+      margin: 0 auto;
+      padding:0px 10px 10px 10px !important ;
+      
+  }
+  h4{
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  #text {
+      padding:20px 40px 0px 60px !important;
+  }
+}
+  .container1 {
+    display: flex; 
+    background-color: black; 
+    margin-left:2px;
+    /* border: #2d2a2a solid 1px; */
+  }
+  @media (max-width: 991px) {
+    .container1 {
+        display: none;
+    }
+}
+  .container2{
+    /* padding-left: 50px; */
+    display: flex; 
+    flex-direction: column; 
+    font-family: 'DM Serif Text', serif;
+    /* border: #2d2a2a solid 1px; */
+  }
+.container3 {
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-family: 'DM Serif Text', serif;
+}
+.navbar-expand-lg, custom_nav-container{
+    padding: 30px;
+}
+  /* Customize navbar links */
+  .navbar-brand,
+  .nav-link {
+    color: white !important; ;
+  }
+  .navbar-toggler{
+    border:none;
+    background-color:rgb(190, 147, 223) !important;
+}
+  /* Remove default navbar background and border */
+  .navbar {
+    background-color: transparent !important;
+    border: none;
+    z-index: 999;
+  }
+.navbar-collapse {
+    /* background-color: black !important; */
+    padding: 10px;
+    position: relative;
+    z-index: 1999;
+}
+  /* Ensure links are white even on hover */
+  .nav-link:hover {
+    color: #2d2a2a !important;
+  }
+  .resume-link{
+    margin-left: auto;
+    
+    align-items: center;
+  }
+  .resume-link a svg {
+    vertical-align: middle; /* Align the icon with the text */
+    margin-left: 5px; /* Space between text and icon */
+}
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container1 {
+    flex: 1; /* Brand on the left */
+  }
+  
+  .container2 {
+    flex: 2; /* Navigation in the middle */
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* This ensures the items wrap in small screens */
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-brand {
+    margin-right: 20px;
+  }
+  
+  .resume {
+    text-align: right;
+    padding-right: 20px;
+  }
+ 
+  .resume{
+    color: white !important;
+    border: rgb(53, 53, 53) 2px solid;
+    background-color:none !important;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .education{
+     padding: 0px 100px 250px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.education h1 {text-align: center;}
+  .card-h100{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .card {
+    background-color: rgb(20 19 21);; /* Black background */
+    border: rgb(93, 91, 91);
+    color: white;
+    padding: 30px 0px 0px 0px;
+    height: 40%;
+    margin-top: 5em;
+    /* animation: moveCard 10s linear infinite;Animation for horizontal movement */
+}
+.h-100 {
+    height: 105% !important;
+    width: 100% !important;
+}
+.card-body p {
+    margin-bottom: 15px; /* Equal spacing between paragraphs */
+}
+
+.card-footer img {
+    margin-left: 10px;
+    border-radius: 50%;
+}
+ .education h1{
+    color: rgb(192, 176, 192);
+    font-size: 50px;
+ }
+.card-footer {
+    padding: 10px;          /* Add some padding to the footer */
+    border-top:#2d2a2a solid 1px; 
+    border-radius: 0 0 20px 20px; /* Optional: Add a top border to distinguish the footer */
+    height: 5em;
+}
+.text-body-secondary {
+    color: white !important; 
+}
+.text-body-secondary{
+    color: thistle !important;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.container1, .container2, .container3 {
+    flex: 1;
+    margin: 0.5rem;
+    min-width: 300px; /* To ensure a minimum width for each container */
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #page img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+  #skills {
+      padding: 10px;
+  }
+
+  .box1 {
+      padding: 10px;
+      width: 100%;
+  }
+
+  .images img {
+      width: 40px;
+  }
+
+  #skills h1 {
+      font-size: 1.5rem;
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+  
+  }
+
+  .box1 h2 {
+      font-size: 1.2rem;
+  }
+}
+ #skills>h1{
+    color: #f1c5cf;
+    margin-top: 70px;
+    text-align: center;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.p-3{
+    color: white;
+}
+.box1 img{
+    width: 5vw;
+    height: 10vh;
+}
+.box1{
+    text-align: center;
+    border: 1px solid gray;
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+#skills {
+  text-align: center;
+  padding: 20px;
+}
+
+#skills h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.box1 {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.box1 h2 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+  width: 60px;
+  transition: transform 0.3s ease;
+}
+*/
+.images img:hover {
+  transform: scale(1.1);
+}
+.progress-bar {
+    display: inline;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--bs-progress-bar-bg);
+    transition: var(--bs-progress-bar-transition);
+}
+.carousel-item img {
+    width: 60vw !important;
+    height: 60vh; /* Ensures the image scales proportionally */
+    margin: 0 auto !important;
+}
+ .projects h1 {
+    padding: 30px 100px 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(192, 176, 192) !important;
+    font-size: 50px;
+}
+.carousel-caption {
+    position: static;
+    padding:1rem;
+        background: rgba(27, 24, 29, 0.7) !important; /* Adjust the background color as needed */
+    display: block;
+    text-align:left;
+    width: 60vw !important;
+    margin: 0 auto !important;
+    font-size: small;  
+    border: #696363 2px solid; 
+    border-top: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Ensure caption is readable with semi-transparent background */
+    box-sizing: border-box;
+}
+.carousel-caption p {
+    padding: 10px 20px 10px 0px ; 
+    font-size: 15px;       /* Adjust font size as needed */
+    width: 60vw;           /* Ensure the caption matches the width of the image */
+    margin: 0 auto;        /* Center the caption */
+
+}
+.carousel-caption h3 {   
+     color: rgb(204 168 232 / 82%) !important; /* Adjust color based on your theme */
+}
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .carousel-caption {
+      position: static; /* Remove absolute positioning */
+      background-color: rgba(0, 0, 0, 0.7); /* Dark background for readability */
+      color: white; /* Text color */
+      padding: 10px;
+      text-align: center;
+      display: block !important; /* Ensure caption is displayed */
+      height: auto;
+      margin-top: 5px; /* Add spacing between image and caption */
+      box-sizing: border-box;
+    }
+
+  .carousel-item img {
+      width: 100%; /* Ensure image is responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
+  .carousel-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+   .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+  .carousel-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+  }
+  h1{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+  }
+
+
+
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 100px 40px 100px;
+    
+}
+.page3 h1{
+    padding: 4rem 100px 2rem 100px;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(192, 176, 192) !important;
+
+}
+.social-icons{
+    display: flex; 
+    margin-left:2px;
+}
+.contact-resume{
+    display: flex;
+    margin-top: 20px;
+    text-decoration: none;
+    border:1px solid transparent;
+    background-color: rgb(204 168 232 / 82%);
+    color: white ;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contact-resume:hover{
+    background-color:rgba(206, 150, 249, 0.917);
+}
+
+.contact-info
+{
+    margin: 30px;
+    width: 25vw;
+}
+.contact-form h3{
+    color:rgb(204 168 232 / 82%);
+    padding-bottom: 1rem;
+}
+.contact-form{
+    padding: 10px 30px;
+    width: 50vw ;
+
+}
+.contact-form button{
+    background-color:rgb(204 168 232 / 82%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+.contact-form button:hover{
+    background-color:rgba(206, 150, 249, 0.917);
+}
+.clicked
+{
+    background-color:rgba(226, 143, 241, 0.82) !important;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 100px 40px 100px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .contact {
+      flex-direction: column; /* Stack the contact info and form vertically */
+      gap: 2rem; /* Adjust gap for better spacing */
+      padding: 20px 20px; /* Adjust padding */
+  }
+
+  .contact-info,
+  .contact-form {
+      width: 100%; /* Make them take full width */
+      max-width: 500px; /* Optionally, set a max-width */
+      margin: 0 auto; /* Center them */
+      padding-left: 20px;
+  }
+  .page3 h1{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    margin-top: 0px !important;
+  }
+}
+/* Global heading styles */
+#text h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+#text h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-top: 20px;
+  color: rgb(190, 147, 223);
+}
+
+#text h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+/* Decrease font size on smaller screens */
+@media (max-width: 768px) {
+  #text h2 {
+      font-size: 1.5rem !important; 
+  }
+
+  #text h1 {
+      font-size: 2.5rem !important;
+  }
+
+  #text h4 {
+      font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #text h2 {
+      font-size: 1.2rem !important; 
+  }
+
+  #text h1 {
+      font-size: 2rem !important;
+  }
+
+  #text h4 {
+      font-size: 1rem !important;
+  }
+}
+/* Academic background section */
+.education {
+  padding: 0px 100px 250px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(20, 19, 21); /* Black background */
+  border: 1px solid rgb(93, 91, 91);
+  color: white;
+  padding: 30px 0;
+  margin-top: 20px; /* Space between cards */
+  width: 100%;
+  max-width: 350px; /* Control the maximum width of cards */
+  margin-bottom: 20px; /* Add margin at the bottom for spacing between cards */
+}
+
+.card-footer {
+  padding: 10px ;
+  border-top: 1px solid #2d2a2a;
+  border-radius: 0 0 20px 20px;
+  height: 5em;
+
+}
+
+.text-body-secondary {
+  color: thistle !important;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .education {
+      padding: 20px; 
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+  }
+
+  .row-cols-1 > .col {
+      flex: 0 0 100%; /* Make each card take full width on small screens */
+      max-width: 100%;
+      margin-bottom: 20px; /* Ensure consistent spacing between cards */
+  }
+
+  .card {
+      max-width: 90%; /* Ensure the card takes most of the screen width */
+      margin: 10px auto; /* Center the cards and add vertical spacing */
+  }
+}
+
